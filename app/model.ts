@@ -1,9 +1,19 @@
-var model = {
-	user : "youssef",
-	items : [
-	{action : "call ur mother", done: false},
-	{action : "call ur mother", done: false},
-	{action : "call ur mother", done: false},
-	{action : "call ur mother", done: false}
-	]
-};
+export class Model {
+	user;
+	items;
+	constructor() {
+		this.user = "Youssef";
+		this.items = [new TodoItem("Buy Flowers", false),
+		new TodoItem("Get Shoes", false),
+			new TodoItem("Collect Tickets", false),
+			new TodoItem("Call Joe", false)]
+	}
+}
+export class TodoItem {
+	action;
+	done;
+	constructor(action, done) {
+		this.action = action;
+		this.done = done;
+	}
+}
