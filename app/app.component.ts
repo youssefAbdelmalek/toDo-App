@@ -10,4 +10,8 @@ export class AppComponent {
     getName(){
         return this.model.user;
     }
+
+    getItems() {
+        return this.model.items;
+    }
 }
